@@ -680,6 +680,16 @@ input, textarea, select {
     font-size: 25px;
     color: #ffffff;
 }
+.service .service-item .service-item-inner .icon .fab {
+    font-size: 40px;
+    line-height: 60px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.service .service-item .service-item-inner:hover .icon .fab {
+    font-size: 25px;
+    color: #ffffff;
+}
 .service .service-item .service-item-inner .icon .fa {
     font-size: 40px;
     line-height: 60px;
@@ -989,7 +999,7 @@ input, textarea, select {
     display: flex;
     display: -ms-flexbox;
 }
-.blog .blog-item-inner {
+.blog .blog-item .blog-item-inner {
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid #d4d4e3;
@@ -1026,6 +1036,7 @@ input, textarea, select {
 .blog .blog-item-inner .blog-info {
     padding: 30px 15px;
     background-color: #fdf9ff;
+    height: 100%;
 }
 
 .blog .blog-item-inner .blog-info .blog-title {
