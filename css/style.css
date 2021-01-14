@@ -7,13 +7,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 
 /* General styles */
-:root {
-    --bp-biggest: 1199px;
-    --bp-medium: 991px;
-    --bp-small: 767px;
-    --bp-smallest: 575px;
-}
-
 
 *,
 *::after,
@@ -36,9 +29,18 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 input, textarea, select {
     font-family: 'Montserrat', sans-serif;
 }
+
+
 
 .container {
     max-width: 110rem;
@@ -414,6 +416,16 @@ input, textarea, select {
     border-radius: 50%;
     display: inline-block;
     border: 8px solid #ffffff;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+.home .intro img:hover {
+    animation: beating .5s infinite;
+}
+
+@keyframes beating {
+    to { transform: scale(1.2); }
 }
 
 .home .intro h1 {
@@ -1240,20 +1252,12 @@ body.dark .shadow-dark {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    text-decoration: none;
-    box-sizing: border-box;
+.aside .logo a:hover {
+    transform: scale(1.2);
 }
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
+
 
 /* Responsive */
 @media (max-width: 1199px) {
