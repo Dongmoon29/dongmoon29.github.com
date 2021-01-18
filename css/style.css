@@ -853,6 +853,22 @@ input, textarea, select {
     opacity: 0;
 
 }
+.portfolio .portfolio-item .portfolio-info a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-20px);
+    opacity: 1;
+    text-decoration: none;
+    position: absolute;
+    bottom: 3rem;
+    left: 5rem;
+
+}
 
 .portfolio .portfolio-item .portfolio-info .icon {
     height: 4rem;

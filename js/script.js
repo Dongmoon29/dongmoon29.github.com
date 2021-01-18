@@ -5,6 +5,10 @@ window.addEventListener("load", function () {
   }, 1000);
 });
 
+// github repo urls
+const DEV_IN = "https://blooming-lowlands-48368.herokuapp.com/";
+const GITHUB_FINDER = "https://githubfinder-dm29.netlify.app/";
+
 // Portfolio item filter
 const filterContainer = document.querySelector(".portfolio-filter");
 const filterBtns = filterContainer.children;
@@ -27,6 +31,21 @@ for (let i = 0; i < totalPortfolioItem; i++) {
     changeItem();
     toggleLightbox();
   });
+}
+
+// portfolio's icon Link handler
+const portfolioInfo = document.querySelectorAll(".portfolio-info");
+
+for (let i = 0; i < portfolioInfo.length; i++) {
+  if (portfolioInfo[i].getAttribute("data-link-url") !== null) {
+    portfolioInfo[i]
+      .querySelector(".icon")
+      .addEventListener("click", function (e) {
+        e.stopPropagation();
+        console.log("clicked");
+        window.open(portfolioInfo[i].getAttribute("data-link-url"), "_blank");
+      });
+  }
 }
 
 function changeItem() {
