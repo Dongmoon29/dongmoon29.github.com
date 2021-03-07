@@ -523,6 +523,8 @@ input, textarea, select {
 .about .about-content .personal-info .buttons .btn {
     margin-right: 1.5rem;
     margin-top: 1rem;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .about .about-content .skills {
@@ -1255,9 +1257,6 @@ body.dark .shadow-dark {
 
 /* Dark Body End */
 
-/* element.style {
-
-} */
 .aside .logo a {
     position: relative;
     padding: 0 10px;
